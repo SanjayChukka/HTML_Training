@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico">
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <header id="contact">
+      <h1>Contact Form</h1>
+      <h3>
+        I'd love to hear from you. Feel free to reach out for any inquiries or
+        opportunities.
+      </h3>
+    </header>
+    <main>
+      <form action="data.php" method="post" enctype="multipart/form-data">
+        <!-- Personal Information -->
+        <section id="personal-info">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name : </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="e.g., john deo"
+              required
+            />
+            <br />
+            <label for="email">Email : </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="e.g., example@gmail.com"
+              required
+            />
+            <br />
+            <label for="mobile">Mobile Number : </label>
+            <input
+              type="tel"
+              name="mobile"
+              id="mobile"
+              placeholder="9876543210"
+              required
+            />
+            <br />
+            <label for="dob">Date of Birth : </label>
+            <input type="date" name="dob" id="dob" required/>
+            <br />
+            <label for="gender">Gender : </label>
+            <input type="radio" name="gender" id="male" value="Male"/>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female"/>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="Other"/>
+            <label for="other">Other</label>
+          </fieldset>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+          <fieldset>
+            <legend>Technical Skills</legend>
+            <p>Languages & Technologies you need :</p>
+            <input type="checkbox" name="html" id="html" value="html"/>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="css" value="css" />
+            <label for="css">CSS</label>
+            <input type="checkbox" name="js" id="js" value="js" />
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="php" id="php" value="php"/>
+            <label for="php">PHP</label>
+            <input type="checkbox" name="py" id="py" value="py"/>
+            <label for="py">Python</label>
+            <input type="checkbox" name="sql" id="sql" value="sql"/>
+            <label for="sql">SQL</label>
+            <input type="checkbox" name="git" id="git" value="git" />
+            <label for="git">GIT</label>
+            <input type="checkbox" name="github" id="github" value="github"/>
+            <label for="github">GitHub</label>
+          </fieldset>
+        </section>
+
+        <!-- Qualification -->
+        <section id="qualification">
+          <fieldset>
+            <legend>Education / Qualification</legend>
+            <label for="qualifi">Qualification : </label>
+            <select name="qualifi" id="qualifi">
+              <option value="btech">B.Tech</option>
+              <option value="diploma">Diploma</option>
+              <option value="ssc">SSC</option>
+              <option value="other">other</option>
+            </select>
+            <label for="other">Other : </label>
+            <input
+              type="text"
+              id="other"
+              name="other"
+              placeholder="Your Qualification"
+            />
+            <label for="year">Year of Completion : </label>
+            <select name="year" id="year">
+              <option value="" selected disabled>select</option>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+            <label for="cgpa">CGPA / Grade : </label>
+            <input type="text" id="cgpa" name="cgpa" />
+          </fieldset>
+        </section>
+
+        <!-- Contact Information -->
+        <section id="contact">
+          <fieldset>
+            <legend>Location Information</legend>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="" selected disabled>select</option>
+              <option value="ind">IND</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <option value="bang">BANG</option>
+              <option value="nz">NZ</option>
+              <option value="rus">RUS</option>
+              <option value="izr">IZR</option>
+            </select>
+            <label for="state">State</label>
+            <select name="state" id="state">
+              <option value="" selected disabled>select</option>
+              <option value="tng">TNG</option>
+              <option value="ap">AP</option>
+              <option value="kmm">KMM</option>
+              <option value="adb">ADB</option>
+              <option value="nzb">NZB</option>
+              <option value="syp">SYP</option>
+              <option value="ben">BEN</option>
+            </select>
+            <label for="address">Address</label>
+            <textarea
+              name="address"
+              id="address"
+              rows="3"
+              cols="30"
+              placeholder=" your address here"
+            ></textarea>
+            <label for="pin">PIN Code</label>
+            <input type="text" id="pin" name="pin" />
+          </fieldset>
+        </section>
+
+        <!-- Resume upload -->
+        <section id="resume">
+          <fieldset>
+            <legend>Upload Your Resume</legend>
+            <!-- <label for="resume">Resume</label> -->
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"/>
+          </fieldset>
+        </section>
+
+        <!-- Adding Buttons -->
+         <section id="buttons">
+            <button type="submit" id="submit" name="submit">Submit</button>
+            <button type="reset" id="reset" name="reset">Reset</button>
+         </section>
+      </form>
+    </main>
+  </body>
+</html>
