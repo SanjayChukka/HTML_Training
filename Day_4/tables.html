@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tables in HTML</h1>
+    <section id="table_1">
+      <table style="text-align: center" border="10">
+        <thead>
+          <tr>
+            <!-- <caption>Sanjay</caption> -->
+            <th rowspan="2">Emp.NO</th>
+            <th rowspan="2">Emp_Name</th>
+            <th colspan="2">Gender</th>
+            <th rowspan="2">Age</th>
+            <th colspan="2">Course</th>
+          </tr>
+          <tr>
+            <th>Male</th>
+            <th>Female</th>
+            <th>CSE</th>
+            <th>ECE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>💫 Sanjay</td>
+            <td>♂️</td>
+            <td>--</td>
+            <td>23</td>
+            <td>✅</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>⚠️varapu Mohan Bhai</td>
+            <td>♂️</td>
+            <td>--</td>
+            <td>23</td>
+            <td>✅</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>🕸️padasu Akhil Chote</td>
+            <td>♂️</td>
+            <td>--</td>
+            <td>20</td>
+            <td>✅</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Sanjay The📌</td>
+            <td>♂️</td>
+            <td>--</td>
+            <td>21</td>
+            <td>✅</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Sagar kanya</td>
+            <td>♂️</td>
+            <td>--</td>
+            <td>23</td>
+            <td>✅</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>JCL</td>
+            <td>--</td>
+            <td>♀️</td>
+            <td>20</td>
+            <td>✅</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>chereddy Poojitha</td>
+            <td>--</td>
+            <td>♀️</td>
+            <td>21</td>
+            <td>✅</td>
+            <td>--</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total Employee's</th>
+            <td>7</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <br>
+    <h1>Table 2 with Forms</h1>
+    <section id="table_2">
+        <form action="data.php" method="POST">
+            <fieldset style="background-color: antiquewhite;">
+               <caption><h3>Fill the Form </h3></caption>
+            <table>
+                <tr>
+                    <td><label for="name">Name</label> <span style="color: red;">*</span></td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label> <span style="color: red;">*</span></td>
+                    <td><input type="text" name="email" id="emalil"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile</label> <span style="color: red;">*</span></td>
+                    <td><input type="text" name="mobile" id="mobile"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date Of Birth</label> <span style="color: red;">*</span></td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+            </table>
+            <label for="gender">Gender <span style="color: red;">*</span></label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label><br>
+            <label for="comment">Write your comments here</label><br>
+            <textarea name="comment" id="comment" cols="35" rows="4"></textarea>
+            <section id="buttons">
+                <input type="submit" id="submit" name="buttons">
+                <input type="reset" id="reset" name="Buttons">
+            </section>
+            </fieldset>
+        </form>
+    </section>
+
+  </body>
+</html>

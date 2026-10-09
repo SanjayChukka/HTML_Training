@@ -12,7 +12,7 @@ echo "<h2>Qualification</h2>";
 echo "Qualification: ".$_POST["qualifi"]."<br>";
 echo "Other Qualification: ".$_POST["other"]."<br>";
 echo "Year: ".$_POST["year"]."<br>";
-echo "Gender: ".$_POST["gender"]."<br>";
+echo "CGPA / Grade : ".$_POST["cgpa"]."<br>";
 
 echo "<h2>Location Details</h2>";
 echo "Country : ".$_POST["country"]."<br>";
