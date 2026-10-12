@@ -5,20 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semantic Elements</title>
     <style>
-      body{
+      body {
         margin: 0;
       }
-      .nav{
-        display: flex;
+
+      header {
+        background-color: antiquewhite;
+        padding: 10px;
+        margin: 0;
       }
+
+      nav {
+        /* position: absolute; */
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: aqua;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 15px;
+        gap: 15px;
+      }
+
+      main {
+        display: flex;
+        /* align-items: flex-start; */
+        background-color: rgb(140, 140, 239);
+        height: 500px;
+      }
+
+      main p {
+        margin: 0;
+        padding: 10px;
+      }
+
+      section {
+        margin-top: 200px; 
+        margin-left: 100px;
+        /* margin-bottom: 500px; */
+        /* margin-bottom: 200px; */
+        width: 200px;
+        height: 300px;
+        padding: 20px;
+        background-color: rgb(126, 85, 159);
+        box-sizing: border-box;
+      }
+
+      /* #s2 {
+        margin-left: 500px;
+        margin-bottom: 500px;
+        margin-bottom: 200px;
+        width: 500px;
+        height: 300px;
+        padding: 20px;
+        background-color: rgb(126, 85, 159);
+        box-sizing: border-box;
+      } */
     </style>
   </head>
 
   <body>
     <!-- <h1>Semantic Elements <span style ="font-weight: 100;">(Page Structure)</span></h1> -->
-    <header style="background-color: antiquewhite; padding: 10px; margin: 0">
+    <header>
       <!-- This is Header Part, Introductory content / top section -->
-      <h1 style="margin: 0">Semantic Page</h1>
+      <h1>Semantic Page</h1>
       <p>
         This page uses Semantic Elements to wrap the content in a meaningful way
         to the browser to understand what we are displaying.
@@ -33,9 +89,19 @@
         </ul>
       </nav>
     </header>
-    <main>This is the main Portion, Main content of the page</main>
-    <section>This is section Part, A thematic section of content</section>
-    <article>This is article part, Independent/self-contained content</article>
-    <aside>This is aside part, Related or secondary content</aside>
+    <main id="main">
+      <p>This is the main Portion, Main content of the page</p>
+
+      <section id="section">
+        This is section Part, A thematic section of content
+      </section>
+      <section id="s2">
+        section Part 2
+      </section>
+    </main>
+    <article id="article">
+      This is article part, Independent/self-contained content
+    </article>
+    <aside id="aside">This is aside part, Related or secondary content</aside>
   </body>
 </html>
